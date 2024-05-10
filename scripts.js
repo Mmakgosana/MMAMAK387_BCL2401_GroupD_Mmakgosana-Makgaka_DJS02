@@ -15,5 +15,7 @@ form.addEventListener("submit", (event) => {
 
   } else if (parseInt(divider) === 0) {
     // check if the divider is Zero
+    result.innerText = "Division not performed. Invalid number provided. Try again";
+    console.error("Error: Division by zero")
   }
 });

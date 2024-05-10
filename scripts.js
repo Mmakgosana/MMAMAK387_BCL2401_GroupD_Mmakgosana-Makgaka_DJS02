@@ -9,5 +9,8 @@ form.addEventListener("submit", (event) => {
 
   if (isNaN(dividend) || isNaN(divider)) {
     //Check if inputs are numbers
+    result.classList.add("critical-error") //Changes HTML body to red.
+    result.innerText = "Something critical went wrong. Please reload the page";
+    console.error("Error: Non-numeric input provided")
   }
 });

@@ -21,5 +21,8 @@ form.addEventListener("submit", (event) => {
     // checks if the inputs are empty
     result.classList.add("error-message") // changes results to red.
     result.innerText = "Division not performed. Both values are required in inputs. Try again";
-  } else
+  } else {
+    result.innerText = Math.floor(dividend / divider);
+    // I have added the Math.floor to round down the results to the nearest whole number
+  }
 });

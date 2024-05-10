@@ -6,4 +6,8 @@ form.addEventListener("submit", (event) => {
   const entries = new FormData(event.target);
   const { dividend, divider } = Object.fromEntries(entries);
   result.innerText = dividend / divider;
+
+  if (isNaN(dividend) || isNaN(divider)) {
+    //Check if inputs are numbers
+  }
 });

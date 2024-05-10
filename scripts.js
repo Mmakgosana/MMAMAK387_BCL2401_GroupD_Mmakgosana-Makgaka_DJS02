@@ -19,5 +19,7 @@ form.addEventListener("submit", (event) => {
     console.error("Error: Division by zero")
   } else if (dividend === '' || divider === '') {
     // checks if the inputs are empty
-  }
+    result.classList.add("error-message") // changes results to red.
+    result.innerText = "Division not performed. Both values are required in inputs. Try again";
+  } else
 });

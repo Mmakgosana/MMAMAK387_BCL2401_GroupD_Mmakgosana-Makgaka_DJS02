@@ -11,6 +11,9 @@ form.addEventListener("submit", (event) => {
     //Check if inputs are numbers
     result.classList.add("critical-error") //Changes HTML body to red.
     result.innerText = "Something critical went wrong. Please reload the page";
-    console.error("Error: Non-numeric input provided")
+    console.error("Error: Non-numeric input provided");
+
+  } else if (parseInt(divider) === 0) {
+    // check if the divider is Zero
   }
 });
